@@ -84,12 +84,38 @@ This project demonstrates the implementation of various design patterns in Java.
    java FileSystemDemo
    ```
 
-## Contributing
+# Astronaut Daily Schedule Organizer - Excercise 2
 
-Contributions to this project are welcome! Please follow these steps:
+## Overview
+The Astronaut Daily Schedule Organizer is a Java-based console application designed to help astronauts manage their daily tasks efficiently. It allows users to add, remove, edit, and view tasks, as well as mark tasks as completed and view tasks by priority.
 
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature-branch-name`
-3. Make your changes and commit them: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature-branch-name`
-5. Submit a pull request
+## Features
+- Add new tasks with description, start time, end time, and priority
+- Remove existing tasks
+- View all tasks sorted by start time
+- Edit existing tasks
+- Mark tasks as completed
+- View tasks by priority level
+- Conflict detection for overlapping tasks
+- Logging mechanism for tracking application usage and errors
+
+## How to Run
+1. Compile all Java files:
+   ```
+   javac *.java
+   ```
+2. Run the main class:
+   ```
+   java Main
+   ```
+
+## Usage
+Follow the on-screen menu to interact with the application. Choose options by entering the corresponding number.
+
+## Design Patterns
+- Singleton Pattern: Ensures a single instance of the ScheduleManager
+- Factory Pattern: Creates Task objects
+- Observer Pattern: Notifies users of task conflicts or updates
+
+## Logging
+The application logs events and errors to `astronaut_scheduler.log` in the application directory.
